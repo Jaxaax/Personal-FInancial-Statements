@@ -1,0 +1,118 @@
+CREATE TABLE `Person` (
+  `Personal ID (PK)` <type>,
+  `SSN / ITIN ` <type>,
+  `Name` <type>,
+  `DOB` <type>,
+  `Address` <type>,
+  `Phone Number` <type>
+);
+
+CREATE TABLE `Liability` (
+  `Liability ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Libility Amount ` <type>,
+  `` <type>
+);
+
+CREATE TABLE `Equity` (
+  `Equity ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Equity Type` <type>,
+  `Equity Value` <type>,
+  `Description` <type>
+);
+
+CREATE TABLE `Income` (
+  `Income ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Income Type` <type>,
+  `Income Amount` <type>
+);
+
+CREATE TABLE `Expense` (
+  `Expense ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Expense Type` <type>,
+  `Expense Amount` <type>
+);
+
+CREATE TABLE `Cashflow` (
+  `Cashflow ID (PK)` <type>,
+  `Personal ID  (FK)` <type>,
+  `Date` <type>,
+  `Type` <type>
+);
+
+CREATE TABLE `Asset` (
+  `Asset ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `` <type>,
+  `` <type>
+);
+
+CREATE TABLE `Real Estate ` (
+  `Asset ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Mortage ` <type>,
+  `Value` <type>
+);
+
+CREATE TABLE `Mortage ` (
+  `Mortage ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Mortage Amount ` <type>,
+  `Monthly Mortage Payment` <type>
+);
+
+CREATE TABLE `Loan` (
+  `Loan ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Loan Type` <type>,
+  `Loan Amount` <type>,
+  `Monthly Loan Payment` <type>
+);
+
+CREATE TABLE `Vehicle` (
+  `Car ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Loan` <type>,
+  `Value` <type>,
+  `Monthly Loan Payment` <type>
+);
+
+CREATE TABLE `Investment` (
+  `Investment ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Investment Type` <type>,
+  `Market Value` <type>,
+  `Realized Return` <type>
+);
+
+CREATE TABLE `Rent` (
+  `Rent ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Rent Start Date` <type>,
+  `Rent Amount` <type>
+);
+
+CREATE TABLE `Tax` (
+  `Tax ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Tax Type` <type>,
+  `Tax Amount` <type>
+);
+
+CREATE TABLE `Credit Card` (
+  `Card ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Outstanding Balance` <type>,
+  `Payment Due` <type>
+);
+
+CREATE TABLE `Insurance` (
+  `Insurance ID (PK)` <type>,
+  `Personal ID (FK)` <type>,
+  `Insurance Type` <type>,
+  `IMonthly Insurance Payment` <type>
+);
+
